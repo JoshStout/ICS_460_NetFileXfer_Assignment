@@ -1,6 +1,6 @@
 The program is made from two files provided for the assignment, NetFileXferClient.py and a NetFileXferServer.py. Both have been modifed to provide TLS encryption. The program is designed to transfer files from the client to the server. 
 
-To generate self signed certificates, run the following command and use 'server' as the Common Name when making the certificate for the server and 'client' for the client certificate. Keep a copy of the server's certificate in the client's folder and a copy of the client's certificate in the server folder.
+To generate self signed certificates, run the following command and use 'server' as the Common Name when making the certificate for the server and 'client' for the client certificate. Keep copies of both certificates in both the client and server folders. Store the server's key in the server folder, and store the client's key in the client folder.
 
 >> openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 
